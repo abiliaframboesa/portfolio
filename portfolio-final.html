@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfólio - Seu Nome</title>
+  <link rel="stylesheet" href="style-final.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Diana Simões</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero" id="home">
+      <h1>Olá, eu sou a <span>Diana Simões</span></h1>
+      <p>Desenvolvedora Front-End Junior | JavaScript | HTML | CSS</p>
+      <a href="#projetos" class="btn-hero">Ver Projetos</a>
+    </div>
+  </header>
+
+  <!-- Projetos -->
+  <section id="projetos" class="section">
+    <h2>Projetos</h2>
+    <div class="projetos-container">
+      <div class="projeto-card">
+        <div class="card-header">To-Do App</div>
+        <div class="card-body">
+          <p>Aplicação interativa para adicionar e concluir tarefas, com design clean e animações sutis.</p>
+          <a href="#" class="btn-card">Demo</a>
+          <a href="#" class="btn-card">Código</a>
+        </div>
+      </div>
+      <div class="projeto-card">
+        <div class="card-header">Calculadora</div>
+        <div class="card-body">
+          <p>Calculadora funcional com interface elegante e validação de inputs.</p>
+          <a href="#" class="btn-card">Demo</a>
+          <a href="#" class="btn-card">Código</a>
+        </div>
+      </div>
+      <div class="projeto-card">
+        <div class="card-header">Buscador API</div>
+        <div class="card-body">
+          <p>Busca de usuários via API com resultados animados, tratamento de erros e feedback visual.</p>
+          <a href="#" class="btn-card">Demo</a>
+          <a href="#" class="btn-card">Código</a>
+        </div>
+      </div>
+      <div class="projeto-card">
+        <div class="card-header">Projeto Integrado</div>
+        <div class="card-body">
+          <p>Integração de To-Do App, Calculadora e Fetch em uma aplicação moderna e interativa.</p>
+          <a href="#" class="btn-card">Demo</a>
+          <a href="#" class="btn-card">Código</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="section about-section fade-in">
+  <h2>Sobre Mim</h2>
+  <div class="about-container">
+    <!-- Coluna da foto -->
+    <div class="about-photo">
+      <img src="./diana-foto.jpg" alt="Foto da Desenvolvedora" />
+    </div>
+
+    <!-- Coluna do texto -->
+    <div class="about-text">
+      <p>Olá! Sou a <strong>Diana Simões</strong>, desenvolvedora Front-End e designer de interfaces. Apaixonada por criar experiências digitais modernas, funcionais e elegantes. Adoro transformar ideias em interfaces interativas que combinam estética e usabilidade.</p>
+
+      <h3>Habilidades</h3>
+      <div class="skills">
+        <span class="skill">JavaScript ES6+</span>
+        <span class="skill">HTML5 & CSS3</span>
+        <span class="skill">UX/UI Design</span>
+        <span class="skill">DOM & Eventos</span>
+        <span class="skill">Async/Await / Fetch</span>
+        <span class="skill">Git & GitHub</span>
+        <span class="skill">Python</span>
+        <span class="skill">R</span>
+      </div>
+
+      <h3>Experiência</h3>
+      <ul class="timeline">
+        <li><strong>2025:</strong> Criação de To-Do App e Calculadora Funcional</li>
+        <li><strong>2025:</strong> Consumo de APIs e integração de projetos interativos</li>
+        <li><strong>2026:</strong> Desenvolvimento de Portfólio Moderno e Projetos Profissionais</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <!-- Contacto -->
+  <section id="contato" class="section contact-section">
+  <h2>Fale Comigo</h2>
+
+  <div class="contact-wrapper">
+    <!-- Box do Formulário -->
+    <div class="form-box">
+      <h3>Envie sua mensagem</h3>
+      <form>
+        <div class="input-group">
+          <input type="text" required>
+          <label>Nome</label>
+        </div>
+        <div class="input-group">
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-group">
+          <textarea rows="4" required></textarea>
+          <label>Mensagem</label>
+        </div>
+        <button type="submit" class="btn-contact">Enviar</button>
+      </form>
+    </div>
+
+    <!-- Box de Contato Rápido -->
+    <div class="info-box">
+      <h3>Contacto Rápido</h3>
+      <p><strong>Email:</strong> <a href="mailto:seuemail@email.com">dcssimoes02@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/dianacsimoes</a></p>
+      <p><strong>GitHub:</strong> <a href="#">github.com/abiliaframboesa</a></p>
+
+      <div class="social-icons">
+        <a href="#" class="icon">💻</a>
+        <a href="#" class="icon">📸</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Diana Simões. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    // Fade e slide animados nas seções
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('show');
+        }
+      });
+    }, {threshold:0.2});
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
