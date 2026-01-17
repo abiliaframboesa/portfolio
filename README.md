@@ -1,15 +1,15 @@
 # 🌐 Portfólio – Diana Simões
 
-Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e experiência como Desenvolvedora Front-End.
+Portfólio pessoal desenvolvido para apresentar os meus projetos, habilidades e experiência como Desenvolvedora Front-End.
 
-🔗 **Acesse o site:** https://abiliaframboesa.github.io/portfolio/
+🔗 **Aceda ao site:** https://abiliaframboesa.github.io/portfolio/
 
 ---
 
 ## ✨ Funcionalidades
 - Layout moderno e responsivo
 - Animações suaves com IntersectionObserver
-- Seção de projetos com links para demo e código
+- Secção de projetos com links para demo e código
 - Formulário de contacto
 - Design focado em UX/UI
 
@@ -39,6 +39,6 @@ Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e exp
 
 ## 🚀 Como executar localmente
 ```bash
-git clone https://github.com/abiliaframboesa/dianacsimoes.github.io
-cd dianacsimoes.github.io
+git clone  https://abiliaframboesa.github.io/portfolio/
+cd abiliaframboesa.github.io/portfolio
 open index.html
