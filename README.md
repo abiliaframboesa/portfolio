@@ -2,7 +2,7 @@
 
 Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e experiência como Desenvolvedora Front-End.
 
-🔗 **Acesse o site:** https://abiliaframboesa.github.io
+🔗 **Acesse o site:** https://abiliaframboesa.github.io/portfolio/
 
 ---
 
